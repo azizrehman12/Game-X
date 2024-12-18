@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: rgb(208, 206, 206);
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keys{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+    flex-wrap: wrap;
+}
+.but{
+    height: 18vmin;
+    width: 18vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    font-size: 10vmin;
+    cursor: pointer;
+}
+.but:hover{
+    background-color: rgba(167, 165, 165, 0.781);
+}
+h1{
+    background-color: white;
+    font-size: 7vmin;
+}
+#reset-but, #new-but{
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reset-but{
+    background-color: #efef0e61;
+    border: 1px solid black;
+    margin-bottom: 50px;
+
+}
+#reset-but:hover{
+    background-color: rgb(234, 234, 7);
+    border: none;
+}
+#reset-but:active{
+    background-color: rgb(255, 255, 8);
+    color: red;
+}
+#new-but{
+    background-color: rgba(38, 192, 92, 0.737);
+
+}
+#new-but:hover{
+    background-color:  rgba(31, 210, 94, 0.737);
+    border: 0.001px solid black;
+}
+#new-but:active{
+    background-color:  rgba(32, 233, 103, 0.737);
+}
+.result{
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+#msg{
+    font-size: 5vmin;
+}
+.hide{
+    display: none;
+}

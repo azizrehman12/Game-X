@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>GaMeX</title>
+    <link rel="icon" href="pic.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Ready.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GaMeX</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" >Top Games</a></li>
+                <li><a href="#">Brain games</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Go Pro</a></li>
+            </ul>
+            <div class="login-signup">
+                <a href="#" class="login-btn">Log In</a>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+        <!-- Game Cards Section -->
+        <section class="gamerrr">
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search games...">
+            </div>
+        
+            <!-- Game Cards Section -->
+            <section class="game-cards" id="game-cards">
+        
+                <div class="card" data-game="Rock-Paper-Scissors">
+                    <img src="/images/1.Rock-Paper-Scissors.jpeg" alt="Rock Paper Scissors" />
+                    <div class="card-info">
+                        <p>Rock-Paper-Scissors</p>
+                        <span>544 ❤ 191k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./ROCKpaper/rockpaperscissors.html')">Play Now</button> 
+                </div>
+        
+                <div class="card" data-game="Maze Game">
+                    <img src="/images/2.Maze Game.png" alt="Maze Game" />
+                    <div class="card-info">
+                        <p>Maze Game</p>
+                        <span>672 ❤ 333k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./MAZE/maze.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="2048 Game">
+                    <img src="/images/3.2048 Game.png" alt="2048 Game" />
+                    <div class="card-info">
+                        <p>2048 Game</p>
+                        <span>272 ❤ 105k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./2048/2048.html')">Play Now</button>
+                </div>
+               
+                <div class="card" data-game="TicTacToe">
+                    <img src="/images/4.TicTacToe Game.png" alt="TicTacToe" />
+                    <div class="card-info">
+                        <p>TicTacToe</p>
+                        <span>309 ❤ 110k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./TICTAKTOE/tictactoe.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="Bubble shooter Game">
+                    <img src="/images/5.Bubble shooter Game.png" alt="Bubble shooter Game" />
+                    <div class="card-info">
+                        <p>Bubble shooter Game</p>
+                        <span>544 ❤ 191k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./BubbleShooter/bubbleshooter.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="Diceroll game">
+                    <img src="/images/6.Diceroll game.png" alt="Diceroll game" />
+                    <div class="card-info">
+                        <p>Diceroll game</p>
+                        <span>672 ❤ 333k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./Diceroll/diceroll.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="Hangman Game">
+                    <img src="/images/7.Hangman Game.png" alt="Hangman Game" />
+                    <div class="card-info">
+                        <p>Hangman Game</p>
+                        <span>272 ❤ 105k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./HANGMAN/hangman.html')">Play Now</button>
+                </div>
+        
+                <div class="card"  data-game="Flappy Bird">
+                    <img src="/images/8.Flappy Bird Game.png" alt="Flappy Bird" />
+                    <div class="card-info">
+                        <p>Flappy Bird</p>
+                        <span>309 ❤ 110k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./FlappyBird/flappybird.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="Drumkit">
+                    <img src="/images/9.Drumkit Game.png" alt="Drumkit" />
+                    <div class="card-info">
+                        <p>Drumkit</p>
+                        <span>544 ❤ 191k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./Drumkit/drumkit.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="Simon Game">
+                    <img src="/images/10.Simon Game.png" alt="Simon Game" />
+                    <div class="card-info">
+                        <p>Simon Game</p>
+                        <span>672 ❤ 333k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./SimonGame/simon.html')">Play Now</button>
+                </div>
+            
+                <div class="card" data-game="Game 11">
+                    <img src="/pic.png" alt="Game 11" />
+                    <div class="card-info">
+                        <p>Game 11</p>
+                        <span>272 ❤ 105k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./GAME/nn.html')">Play Now</button>
+                </div>
+        
+                <div class="card" data-game="Game 12">
+                    <img src="/pic.png" alt="Game 12" />
+                    <div class="card-info">
+                        <p>Game 12</p>
+                        <span>309 ❤ 110k</span>
+                    </div>
+                    <div class="favorite-icon" data-favorite="false">♡</div>
+                    <button onclick="playGame('./GAME/nn.html')">Play Now</button>
+                </div>
+            </section>
+
+            <!-- Show Favorites Button -->
+            <div class="controls">
+                <button id="show-favorites">Play Favorites</button>
+            </div>
+            
+        </section>
+    </main>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="special_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="/Ready.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <p>@2024 Muneeb | All Rights Reserved</p>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="Ready.js"></script>
+
+</body>
+</html>

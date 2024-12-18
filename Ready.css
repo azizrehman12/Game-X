@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: #f2f2f2;    
+}
+
+body header main {
+    padding: 20px;
+}
+
+body footer .team-info
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #453dd2;
+    margin-bottom: 80px;
+    margin-top: 55px;
+    border-radius: 50%;
+}
+.Logo p{
+    color: #fdfdfd;
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: bold;
+    /* font-family: "Share Tech Mono", monospace;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.animatelogo {
+    
+    height: auto; 
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+}
+
+/*#12b9ff*/
+.pulse {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 0 0 40px #000000, 0 0 50px white;
+    border-radius: 50%;
+    border: 2px solid #12b9ff;
+    background: url('pic.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.pulse span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: pulseAnimation 3s infinite ease-in-out;
+    opacity: 0;
+}
+
+.pulse span:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.pulse span:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    animation-delay: 1s;
+}
+
+.pulse span:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    animation-delay: 2s;
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulseAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #8f093c;
+}
+
+.header, .main {
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 55px;
+    color: #8f093c;
+    font-family:fantasy;
+    font-weight: lighter; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 40px;
+}
+.nav-links li a{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.nav-links li a:hover{
+    padding: 5px;
+    color:#a71d4fec;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Login and Signup Buttons */
+.login-signup {
+    display: flex;
+}
+
+.login-btn, .signup-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.signup-btn {
+    background-color: #8f093c;
+    color: white;
+}
+
+/* Main Section */
+.title-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    margin: 20px 0;
+    size: 100px;
+}
+
+.title-section h3 {
+    margin-top: 30px;
+    color: #1008ad;
+    font-size: 50px;
+    margin-bottom: -30px;
+
+}
+
+.animatte {
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 20px;
+    position: relative;
+    color:white;
+    -webkit-text-stroke: 0.3vw white;
+    text-transform: uppercase;
+    display: inline-block; 
+}
+
+.animatte::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #1008ad;
+    -webkit-text-stroke: 0; 
+    border-right: 2px solid #1008ad;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 12s linear infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+
+
+.title-section p {
+    margin-top: 10px;
+    margin-bottom: 55px;
+    color: #777;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.search-results-link{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 30;
+    background-color: #1008ad;
+    color: white;
+    padding: 18px;
+    border-radius: 120px;
+}
+.search-results-link:hover{
+    background-color: #453dd2;
+}
+
+/* Game Cards */
+body .gamerrr{
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.gamerrr{
+    background: white;
+}
+
+.search-bar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Controls section for the favorites button */
+.controls {
+    padding-top: 50px;
+    margin: 20px;
+}
+
+#show-favorites {
+    padding: 30px;
+    background-color: #3586ff;
+    color: white;
+    font-weight: 30;
+    border-radius: 120px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#show-favorites:hover {
+    background-color: #453dd2;
+}
+
+/* Rest of the styles remain the same */
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.game-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* No movement when hovered */
+.card:hover {
+    transform: none;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Favorite Icon */
+.favorite-icon {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff0000;
+    transition: color 0.3s ease;
+}
+
+.favorite-icon[data-favorite="true"] {
+    color: #ff0000; /* Filled heart */
+}
+
+.favorite-icon[data-favorite="false"] {
+    color: #ccc; /* Unfilled heart */
+}
+
+.card-info {
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-info span {
+    color: #777;
+    font-size: 14px;
+}
+
+.card button {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1008ad;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #12b9ff;
+    border: 3px solid #1ba4dfe2;
+}
+
+.team-info{
+    margin-top: 160px;
+    margin-bottom: 280px;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.intro{
+    font-size: 60px;
+    color: #1008ad;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team{
+    overflow: hidden;
+    padding: 45px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.team-slide{   
+    animation: 10s slide infinite linear;
+    flex-direction: column;
+    display: inline-block ;
+}
+
+.team:hover .team-slide{
+    animation-play-state: paused;
+}
+
+.team-slide ul{    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.team-slide ul li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    height: 40px;
+    margin: 0 60px;
+    list-style: none;
+}
+
+footer
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background: #333;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .special_icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .special_icon li,
+footer .menu li
+{
+    list-style: none;
+}
+
+footer .special_icon li a 
+{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .special_icon li a:hover
+{
+    transform: translateY(-10px);
+}
+
+footer .menu li a 
+{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75s;
+}
+
+footer .menu li a:hover
+{
+    opacity: 1;
+    color: #cdc5f1;
+} 
+
+footer p 
+{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave1
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
